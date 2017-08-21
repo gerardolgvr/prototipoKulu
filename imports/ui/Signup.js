@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-//import { Accounts } from 'meteor/accounts-base'
+import { Accounts } from 'meteor/accounts-base'
 
 
 export default class Signup extends React.Component {
