@@ -1,7 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Login from './Login';
+
 export default class Navbar extends React.Component {
+  onSubmit(e){
+    e.preventDefault();
+
+    login = new Login();
+  }
   render () {
     return (
       <div>
@@ -21,7 +28,10 @@ export default class Navbar extends React.Component {
               <div className="row justify-content-end">
                 <div className="col-4">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Entrar</a>
+                    <form className="form-inline" onSubmit={this.onSubmit.bind(this)} noValidate>
+                      <button className="nav-link">Entrar</button>
+                    </form>
+                    {/*<a className="nav-link" href="#">Entrar</a>*/}
                   </li>
                 </div>
                 <div className="col-4">

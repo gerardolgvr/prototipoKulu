@@ -10,6 +10,8 @@ import Affiliates from '../ui/Affiliates';
 import Business from '../ui/Business';
 import Support from '../ui/Support';
 import NotFound from '../ui/NotFound';
+import Login from '../ui/Login';
+import Signup from '../ui/Signup';
 
 export const routes = (
   <BrowserRouter>
@@ -20,6 +22,8 @@ export const routes = (
       <Route path="/affiliates" exact component={Affiliates} /*onEnter={onEnterPrivatePage}*//>
       <Route path="/business" exact component={Business} /*onEnter={onEnterPrivatePage}*//>
       <Route path="/support" exact component={Support} /*onEnter={onEnterPrivatePage}*//>
+      <Route path="/login" exact component={Login} /*onEnter={onEnterPrivatePage}*//>
+      <Route path="/signup" exact component={Signup} /*onEnter={onEnterPrivatePage}*//>
       <Route path="*" exact component={NotFound}/>
     </Switch>
   </BrowserRouter>
