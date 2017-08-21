@@ -29,26 +29,18 @@ export default class Login extends React.Component {
   render(){
     return (
       <div>
-        <h1>Short Lnk</h1>
+
+        <h1>K'ulu</h1>
 
         {this.state.error ? <p>{this.state.error}</p> : undefined}
 
         <form onSubmit={this.onSubmit.bind(this)} noValidate>
           <input type="email" ref="email" name="email" placeholder="Email"/>
           <input type="password" ref="password" name="password" placeholder="Contraseña"/>
-          <label>Tipo de cuenta: </label>
-          <select>
-            <option value="seleccione">Seleccione...</option>
-            <option value="estudiante">Estudiante</option>
-            <option value="maestro">Maestro</option>
-          </select>
           <button>Entrar</button>
         </form>
 
-
-        <Link to="/signup">Ya tienes una cuenta?</Link>
-
-
+        <Link to="/signup">Aún no tienes una cuenta?</Link>
       </div>
     );
   }
