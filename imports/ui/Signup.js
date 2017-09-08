@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Accounts } from 'meteor/accounts-base'
+import shortid from 'shortid';
 
 
 export default class Signup extends React.Component {
@@ -25,14 +26,15 @@ export default class Signup extends React.Component {
       return this.setState({error: 'Seleccione un tipo de cuenta válido'});
     }
 
-    /*
+
     Accounts.createUser({email, password}, (err) => {
       if(err){
         this.setState({error: err.reason});
       } else {
         this.setState({error: ''});
       }
-    });*/
+    });
+
 
 
   }
