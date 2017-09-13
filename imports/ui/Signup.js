@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Accounts } from 'meteor/accounts-base'
 import shortid from 'shortid';
