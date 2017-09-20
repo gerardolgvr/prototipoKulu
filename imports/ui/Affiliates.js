@@ -6,7 +6,3 @@ export default class Affiliates extends React.Component {
     return <p>Affiliates Component here!</p>;
   }
 }
-
-Affiliates.propTypes = {
-
-}

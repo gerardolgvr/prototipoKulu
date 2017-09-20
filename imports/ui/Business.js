@@ -6,7 +6,3 @@ export default class Business extends React.Component {
     return <p>Business Component here!</p>;
   }
 }
-
-Business.propTypes = {
-
-}

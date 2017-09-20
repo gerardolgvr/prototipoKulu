@@ -6,7 +6,3 @@ export default class Support extends React.Component {
     return <p>Support Component here!</p>;
   }
 }
-
-Support.propTypes = {
-
-}

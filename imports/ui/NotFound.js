@@ -6,7 +6,3 @@ export default class NotFound extends React.Component {
     return <p>NotFound Component here!</p>;
   }
 }
-
-NotFound.propTypes = {
-
-}

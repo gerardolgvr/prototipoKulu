@@ -6,7 +6,3 @@ export default class Contact extends React.Component {
     return <p>Contact Component here!</p>;
   }
 }
-
-Contact.propTypes = {
-
-}

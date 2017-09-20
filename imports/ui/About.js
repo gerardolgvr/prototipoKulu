@@ -6,7 +6,3 @@ export default class About extends React.Component {
     return <p>About Component here!</p>;
   }
 }
-
-About.propTypes = {
-
-}
