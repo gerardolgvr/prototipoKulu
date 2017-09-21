@@ -58,7 +58,7 @@ export default class Signup extends React.Component {
           <button>Crear Cuenta</button>
         </form>
 
-        <Link to="/login">Ya tienes una cuenta?</Link>
+        {/*<Link to="/login">Ya tienes una cuenta?</Link>*/}
       </div>
     );
   }

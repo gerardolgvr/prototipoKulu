@@ -40,7 +40,7 @@ export default class Login extends React.Component {
           <button>Entrar</button>
         </form>
 
-        <Link to="/signup">Aún no tienes una cuenta?</Link>
+        {/*<Link to="/signup">Aún no tienes una cuenta?</Link>*/}
       </div>
     );
   }
