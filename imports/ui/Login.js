@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { Meteor } from 'meteor/meteor';
 import PropTypes from 'prop-types';
 
@@ -28,19 +28,21 @@ export default class Login extends React.Component {
 
   render(){
     return (
-      <div>
+      <div className="boxed-view">
+        <div className="boxed-view_box">
+          <h1 className="title">K'ulu</h1>
 
-        <h1>K'ulu</h1>
+          {this.state.error ? <p>{this.state.error}</p> : undefined}
 
-        {this.state.error ? <p>{this.state.error}</p> : undefined}
+          <form onSubmit={this.onSubmit.bind(this)} noValidate className="boxed-view_form">
+            <input className="form" type="email" ref="email" name="email" placeholder="Email"/>
+            <input className="form" type="password" ref="password" name="password" placeholder="Contraseña"/>
+            <button>Entrar</button>
+          </form>
 
-        <form onSubmit={this.onSubmit.bind(this)} noValidate>
-          <input type="email" ref="email" name="email" placeholder="Email"/>
-          <input type="password" ref="password" name="password" placeholder="Contraseña"/>
-          <button>Entrar</button>
-        </form>
+          <Link to="/signup">Aún no tienes una cuenta?</Link>
+        </div>
 
-        {/*<Link to="/signup">Aún no tienes una cuenta?</Link>*/}
       </div>
     );
   }

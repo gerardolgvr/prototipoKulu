@@ -1,5 +1,5 @@
 import React from 'react'
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import PropTypes from 'prop-types';
 import { Accounts } from 'meteor/accounts-base'
 import shortid from 'shortid';
@@ -41,24 +41,27 @@ export default class Signup extends React.Component {
 
   render(){
     return (
-      <div>
-        <h1>Únete a K'ulu</h1>
+      <div className="boxed-view">
+        <div className="boxed-view_box">
+          <h1>Únete a K'ulu</h1>
 
-        {this.state.error ? <p>{this.state.error}</p> : undefined}
+          {this.state.error ? <p>{this.state.error}</p> : undefined}
 
-        <form onSubmit={this.onSubmit.bind(this)} noValidate>
-          <input type="email" ref="email" name="email" placeholder="Email"/>
-          <input type="password" ref="password" name="password" placeholder="Password"/>
-          <label>Tipo de cuenta: </label>
-          <select ref="type">
-            <option value="seleccione">Seleccione...</option>
-            <option value="estudiante">Estudiante</option>
-            <option value="maestro">Maestro</option>
-          </select>
-          <button>Crear Cuenta</button>
-        </form>
+          <form onSubmit={this.onSubmit.bind(this)} noValidate className="boxed-view_form">
+            <input type="email" ref="email" name="email" placeholder="Email"/>
+            <input type="password" ref="password" name="password" placeholder="Password"/>
+            <label>Tipo de cuenta: </label>
+            <select ref="type">
+              <option value="seleccione">Seleccione...</option>
+              <option value="estudiante">Estudiante</option>
+              <option value="maestro">Maestro</option>
+            </select>
+            <button>Crear Cuenta</button>
+          </form>
 
-        {/*<Link to="/login">Ya tienes una cuenta?</Link>*/}
+          <Link to="/login">Ya tienes una cuenta?</Link>
+        </div>
+
       </div>
     );
   }
