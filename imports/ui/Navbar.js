@@ -29,13 +29,13 @@ export default class Navbar extends React.Component {
                 <div className="col-4">
                   <li className="nav-item">
                     <form className="form-inline" onSubmit={this.onSubmit.bind(this)} noValidate>
-                      <a className="nav-link" href="#">Entrar</a>
+                      <a className="nav-link" href="/login">Entrar</a>
                     </form>
                   </li>
                 </div>
                 <div className="col-4">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Registrarse</a>
+                    <a className="nav-link" href="/signup">Registrarse</a>
                   </li>
                 </div>
               </div>

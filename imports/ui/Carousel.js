@@ -13,14 +13,14 @@ export default class Carousel extends React.Component {
           </ol>
           <div className="carousel-inner" role="listbox">
             <div className="carousel-item active img">
-              <img className="d-block img-fluid" src="/images/2.jpg" alt="First slide"/>
+              <img className="d-block img-fluid" src="/images/21.jpg" alt="First slide"/>
               <div className="carousel-caption d-none d-md-block">
                 <h3>lor dsfjsd jnafn</h3>
                 <p>djbdfsjbjdfsnjbdfsjbdsbhjdfsbhjsfhjbshjfsjsf</p>
               </div>
             </div>
             <div className="carousel-item img">
-              <img className="d-block img-fluid" src="/images/2.jpg" alt="Second slide"/>
+              <img className="d-block img-fluid" src="/images/22.jpg" alt="Second slide"/>
               <div className="carousel-caption d-none d-md-block">
                 <h3>lor dsfjsd jnafn</h3>
                 <p>djbdfsjbjdfsnjbdfsjbdsbhjdfsbhjsfhjbshjfsjsf</p>
